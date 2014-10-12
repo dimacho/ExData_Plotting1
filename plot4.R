@@ -13,7 +13,7 @@ hsc <- subset(data, Date=="1/2/2007" | Date=="2/2/2007")
 png("plot4.png")
 
 # Setting margins
-par(mar=c(4,4,4,2), mfrow=c(2,2), cex=0.8)
+par(mar=c(4,4,1,2), mfrow=c(2,2)) 
 
 # Create Active Power plot
 plot(strptime(paste(hsc$Date,hsc$Time),"%e/%m/%Y %H:%M:%S"),
